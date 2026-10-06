@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Production Desk</title>
+        <item>
+            <title>1.4.0</title>
+            <pubDate>Tue, 06 Oct 2026 15:51:32 -0400</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description><![CDATA[<h2>Production Desk 1.4.0</h2>
+<ul>
+  <li>Check for updates from the Production Desk menu.</li>
+  <li>Choose automatic update checks and optional automatic downloading and installation.</li>
+  <li>Update downloads are verified before installation.</li>
+  <li>Pending project changes are saved before restarting for an update.</li>
+</ul>
+<p>Update delivery requires the update host at updates.squidproductions.org to be activated. Local scheduling remains available offline.</p>
+]]></description>
+            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.0-10.zip" length="17911833" type="application/octet-stream" sparkle:edSignature="hyGuXhD1bnnaipp9sOucsHzqGu3KHv1D4ItbIrdP57Y0uDircB7v7wwG/up4ImiSL9t0rOmhZ1gXcsqQByCKAg=="/>
+        </item>
+    </channel>
+</rss>
