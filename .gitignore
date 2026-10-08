@@ -1,0 +1,10 @@
+# iOS builds and personal Xcode settings
+ios/build/
+ios/DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+ios/dist/
+*.ipa
+*.xcarchive/
+__pycache__/

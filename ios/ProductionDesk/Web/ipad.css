@@ -1,0 +1,43 @@
+/* Scoped to the native iPad container; desktop layout retains its styling. */
+.ipad-app { -webkit-text-size-adjust:100%; }
+.ipad-app button { min-height:44px; }
+.ipad-app input:not([type=checkbox]):not([type=color]),.ipad-app select,.ipad-app textarea { font-size:16px; min-height:44px; }
+.ipad-app .sidebar nav button,.ipad-app .sidebar-button { font-size:12px; }
+.ipad-app .sheet-actions { flex-wrap:wrap; }
+.ipad-app .strip { min-height:60px; }
+.ipad-app .strip-color-button { min-width:44px; }
+.ipad-app .strip-move-button { min-width:44px; padding:4px; background:transparent; border:0; color:inherit; font-size:20px; }
+.ipad-app .schedule-layout .strip { grid-template-columns:44px 35px 1fr 45px 44px; }
+.ipad-app .schedule-layout .boneyard .strip { grid-template-columns:44px 22px 1fr 24px 44px; }
+.ipad-app .field,.ipad-app .panel-header,.ipad-app .script-selection { font-size:12px; }
+.ipad-app .shot-order button { min-width:44px; }
+.ipad-app dialog { max-height:85dvh; }
+.ipad-app .script-page { font-size:14px; }
+.ipad-app .script-selection { flex-wrap:wrap; }
+@media(max-width:1000px) {
+  .ipad-app .sidebar { position:relative; display:block; width:100%; padding:12px 16px; }
+  .ipad-app .brand { margin:0 0 12px; }
+  .ipad-app .sp-logo-frame { width:35px; height:53px; }
+  .ipad-app .sp-logo-frame img { width:60px; height:60px; left:-13px; top:-4px; }
+  .ipad-app .sidebar-caption,.ipad-app .project-label,.ipad-app .sidebar-rule,.ipad-app .sidebar-bottom { display:none; }
+  .ipad-app .sidebar nav { display:flex; overflow:auto; }
+  .ipad-app .sidebar nav button { white-space:nowrap; padding:10px; }
+  .ipad-app .sidebar-button { display:inline-flex; width:auto; margin:6px 4px 0 0; }
+  .ipad-app .sidebar select { margin-bottom:8px; }
+  .ipad-app main { margin-left:0; }
+  .ipad-app .workspace { grid-template-columns:1fr; }
+  .ipad-app .workspace .script-scroll { height:340px; }
+  .ipad-app .breakdown-scroll { height:auto; max-height:600px; }
+  .ipad-app .schedule-layout { grid-template-columns:minmax(0,1fr) 280px; }
+  .ipad-app #toast { left:50%; }
+}
+@media(max-width:700px) {
+  .ipad-app .schedule-layout,.ipad-app .shot-layout { grid-template-columns:1fr; }
+}
+/* WebKit PDF capture uses the report alone, with all rows visible. */
+body.native-print > aside,body.native-print > main,body.native-print > dialog,body.native-print > #toast { display:none!important; }
+body.native-print { background:white; }
+body.native-print #print-area { display:block; padding:24px; color:#111; font-size:11px; }
+body.native-print #print-area th { position:static; }
+body.native-print #print-area .table-wrap { max-height:none; overflow:visible; }
+body.native-print #print-area button { display:none; }
