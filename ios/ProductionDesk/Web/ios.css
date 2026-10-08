@@ -1,0 +1,136 @@
+/* Production Desk for touch: original SP mark, Futura/Courier and Squid red. */
+html,body { max-width:100%; }
+.ipad-app .panel,.ipad-app .workspace > *, .ipad-app .schedule-layout > *, .ipad-app .shot-layout > * { min-width:0; }
+.ipad-app .panel { border-radius:12px; box-shadow:0 3px 18px #241d2105; }
+.ipad-app .panel-header { padding:16px 18px; height:auto; min-height:54px; }
+.ipad-app .page-heading { border-top:3px solid #E60026; }
+.ipad-app .page-heading h1 { letter-spacing:-1px; overflow-wrap:anywhere; }
+.ipad-app .eyebrow { font-size:9px; letter-spacing:2px; }
+.ipad-app .summary-bar { border-width:1px 0; border-radius:0; background:transparent; padding:15px 0; }
+.ipad-app .summary-stat { flex-direction:column; gap:3px; }
+.ipad-app .summary-stat strong { font-size:24px; line-height:1; }
+.ipad-app .summary-stat span { font-size:9px; text-transform:uppercase; letter-spacing:.8px; }
+.ipad-app .script-toolbar { flex-wrap:wrap; }
+.ipad-app .scene-search { min-width:100px; }
+.ipad-app dialog { width:min(620px,calc(100% - 24px)); margin:auto; max-height:85dvh; overflow:auto; border-radius:14px; }
+.ipad-app .modal-footer { position:sticky; bottom:0; flex-wrap:wrap; z-index:1; }
+.ipad-app .modal-header h2 { overflow-wrap:anywhere; }
+.ipad-app .modal-body .form-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.ipad-app .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+.ipad-app #production-tools-panel { display:contents; }
+.ipad-app #production-tools-toggle { display:none; }
+.ipad-app #desk-search-toggle { display:none; }
+.ipad-app .desk-shot-filters > summary { display:none; }
+.ipad-app .desk-nav-icon svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.ipad-app .desk-nav-label { width:auto; font-size:inherit; color:inherit; }
+.ipad-app .recovery-notice { margin:0 16px 16px; padding:16px; line-height:1.7; }
+@media(min-width:768px) {
+  .ipad-app .sidebar { position:fixed; width:200px; padding:24px 14px; display:flex; }
+  .ipad-app main { margin-left:200px; }
+  .ipad-app .brand { margin:0 0 18px; gap:9px; }
+  .ipad-app .brand-title { font-size:13px; }
+  .ipad-app .sp-logo-frame { width:42px; height:64px; }
+  .ipad-app .sp-logo-frame img { width:72px; height:72px; left:-15px; top:-4px; }
+  .ipad-app .software-credit { display:block; margin:0 0 24px; font-size:8px; letter-spacing:.9px; }
+  .ipad-app .project-label { display:block; margin-left:0; }
+  .ipad-app .sidebar select { margin-bottom:24px; }
+  .ipad-app .sidebar nav { display:grid; overflow:visible; }
+  .ipad-app .sidebar nav button { font-size:12px; padding:13px 9px; }
+  .ipad-app .sidebar nav .desk-nav-icon { display:flex; width:21px; }
+  .ipad-app .sidebar nav .desk-nav-label { width:auto; text-align:left; }
+  .ipad-app .sidebar-button { display:flex; width:100%; padding:12px 9px; margin:0; font-size:11px; }
+  .ipad-app .sidebar-caption,.ipad-app .sidebar-rule,.ipad-app .sidebar-bottom { display:block; }
+  .ipad-app .sidebar-rule { margin:24px 9px; }
+  .ipad-app .sidebar-caption:not(.software-credit) { font-size:8px; margin-left:9px; }
+  .ipad-app .sidebar-bottom { margin-top:auto; }
+  .ipad-app .page-heading { padding:30px 28px 24px; }
+  .ipad-app .page-heading h1 { font-size:44px; }
+  .ipad-app .summary-bar { margin:0 28px 24px; gap:32px; }
+  .ipad-app #content { padding:0 28px 28px; }
+}
+@media(min-width:1001px) {
+  .ipad-app .workspace { grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:18px; }
+  .ipad-app .workspace .script-scroll { height:calc(100dvh - 400px); min-height:380px; }
+}
+@media(min-width:768px) and (max-width:1000px) {
+  .ipad-app .workspace,.ipad-app .schedule-layout,.ipad-app .shot-layout { grid-template-columns:1fr; }
+}
+@media(max-width:767px) {
+  .ipad-app main { margin-left:0; padding-bottom:82px; }
+  .ipad-app .sidebar { position:relative; width:100%; display:block; padding:16px 18px 12px; border-right:0; border-bottom:1px solid var(--line); }
+  .ipad-app .desk-brandbar { display:flex; align-items:center; justify-content:space-between; }
+  .ipad-app .brand { margin:0; gap:8px; }
+  .ipad-app .sp-logo-frame { width:24px; height:37px; }
+  .ipad-app .sp-logo-frame img { width:42px; height:42px; left:-9px; top:-2px; }
+  .ipad-app .brand-title { font-size:12px; line-height:1.2; }
+  .ipad-app .brand-edition { font-size:6px; letter-spacing:1.1px; margin-top:5px; }
+  .ipad-app .software-credit,.ipad-app .project-label { display:none; }
+  .ipad-app #production-tools-toggle { display:block; width:44px; height:44px; padding:0; border-radius:10px; letter-spacing:2px; font-size:14px; }
+  .ipad-app .desk-production-switcher { margin-top:12px; }
+  .ipad-app .sidebar select { height:44px; margin:0; font-size:16px; border:0; background:var(--surface); padding:10px 12px; border-radius:8px; }
+  .ipad-app #production-tools-panel[hidden] { display:none; }
+  .ipad-app #production-tools-panel:not([hidden]) { display:grid; grid-template-columns:1fr 1fr; gap:4px; padding-top:12px; }
+  .ipad-app #production-tools-panel .sidebar-caption,.ipad-app #production-tools-panel .sidebar-rule { display:none; }
+  .ipad-app #production-tools-panel .sidebar-button { display:flex; width:100%; padding:10px; margin:0; min-height:44px; font-size:11px; }
+  .ipad-app #production-tools-panel .sidebar-bottom { display:flex; flex-wrap:wrap; gap:12px; padding:10px; grid-column:1/-1; }
+  .ipad-app #production-tools-panel .sidebar-bottom button { width:auto; min-height:36px; gap:8px; }
+  .ipad-app #production-tools-panel .sidebar-bottom p,.ipad-app #production-tools-panel .sidebar-bottom small,.ipad-app #production-tools-panel .offline-pill { display:none; }
+  .ipad-app .topbar { height:44px; padding:0 18px; border-bottom:0; }
+  .ipad-app .topbar > div:first-child { display:none; }
+  .ipad-app .topbar-right { width:100%; gap:4px; }
+  .ipad-app .topbar #save-status { margin-right:auto; font-size:10px; }
+  .ipad-app .topbar button { width:44px; height:44px; padding:0; }
+  .ipad-app .page-heading { padding:20px 18px 18px; gap:12px; align-items:flex-start; }
+  .ipad-app .page-heading h1 { font-size:31px; margin:8px 0; line-height:1.12; }
+  .ipad-app .page-heading p { display:none; }
+  .ipad-app .heading-actions { flex-direction:column; gap:6px; flex-shrink:0; }
+  .ipad-app .heading-actions button { height:38px; padding:7px 9px; font-size:10px; white-space:nowrap; border-radius:8px; }
+  .ipad-app .summary-bar { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:10px; margin:0 18px 16px; padding:15px 0; }
+  .ipad-app .summary-stat strong { font-size:22px; }
+  .ipad-app .summary-stat span { font-size:8px; letter-spacing:.4px; }
+  .ipad-app .summary-note { display:none; }
+  .ipad-app #content { padding:0 12px 22px; }
+  .ipad-app .workspace,.ipad-app .schedule-layout,.ipad-app .shot-layout { grid-template-columns:1fr; gap:14px; }
+  .ipad-app .panel-header { padding:12px 14px; flex-wrap:wrap; gap:8px; }
+  .ipad-app .script-toolbar #scene-picker { flex:1; min-width:100px; max-width:100%; font-size:16px; }
+  .ipad-app .scene-search { height:44px; font-size:16px; }
+  .ipad-app .script-toolbar:not(.desk-search-open) .scene-search { display:none; }
+  .ipad-app #desk-search-toggle { display:flex; align-items:center; justify-content:center; width:44px; height:44px; padding:10px; flex-shrink:0; }
+  .ipad-app #desk-search-toggle svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:1.5; }
+  .ipad-app .script-selection > span { display:none; }
+  .ipad-app .tag-row { display:flex; width:100%; }
+  .ipad-app .tag-row select { min-width:0; flex:1; font-size:16px; }
+  .ipad-app .tag-row button { font-size:10px; min-height:44px; }
+  .ipad-app .workspace .script-scroll { height:320px; min-height:320px; padding:12px; }
+  .ipad-app .workspace .script-page { padding:20px 18px; font-size:13px; box-shadow:none; }
+  .ipad-app .board-toolbar { flex-wrap:wrap; }
+  .ipad-app .schedule-layout .strip,.ipad-app .schedule-layout .boneyard .strip { grid-template-columns:44px 24px minmax(0,1fr) 32px 44px; gap:4px; }
+  .ipad-app .strip-heading { overflow-wrap:anywhere; }
+  .ipad-app .form-grid,.ipad-app .modal-body .form-grid { grid-template-columns:1fr; }
+  .ipad-app .form-grid .wide { grid-column:auto; }
+  .ipad-app .weekday-row { flex-wrap:wrap; }
+  .ipad-app .report-tabs { overflow-x:auto; }
+  .ipad-app .report-tabs button { flex-shrink:0; }
+  .ipad-app .shot-page-heading { margin:0 0 16px; align-items:center; }
+  .ipad-app .shot-page-heading h2 { font-size:28px; letter-spacing:-.5px; }
+  .ipad-app .shot-page-heading p { display:none; }
+  .ipad-app .shot-heading-tools { flex-direction:row; gap:5px; }
+  .ipad-app .shot-heading-tools button { font-size:10px; padding:8px; }
+  .ipad-app .shot-metrics { border-width:1px 0; border-radius:0; background:transparent; padding:14px 0; gap:12px 8px; }
+  .ipad-app .shot-metrics strong { font-size:22px; margin-bottom:3px; }
+  .ipad-app .shot-metrics span { font-size:9px; }
+  .ipad-app .desk-shot-filters { margin:14px 0; border:1px solid var(--line); border-radius:8px; background:var(--paper); }
+  .ipad-app .desk-shot-filters > summary { display:list-item; cursor:pointer; padding:14px; font-size:12px; min-height:44px; }
+  .ipad-app .desk-shot-filters .shot-toolbar { margin:0; padding:0 14px 14px; }
+  .ipad-app .sidebar #navigation { position:fixed; bottom:0; left:0; right:0; z-index:15; height:72px; display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:2px; padding:8px 8px 10px; background:var(--paper); border-top:1px solid var(--line); overflow:visible; margin:0; }
+  .ipad-app .sidebar #navigation button { display:flex; flex-direction:column; justify-content:center; gap:4px; min-height:52px; padding:4px 2px; border-radius:8px; font-size:9px; box-shadow:none; color:var(--muted); }
+  .ipad-app .sidebar #navigation .desk-nav-icon { display:flex; width:21px; color:inherit; }
+  .ipad-app .sidebar #navigation .desk-nav-label { display:block; width:auto; color:inherit; font-size:11px; }
+  .ipad-app .sidebar #navigation button.active { background:var(--light); color:var(--accent-ink); }
+  .ipad-app .sidebar #navigation button.active .desk-nav-icon svg { stroke-width:2; }
+  .ipad-app .sidebar #navigation button.active .desk-nav-label { font-weight:700; }
+  .ipad-app.desk-keyboard .sidebar #navigation { display:none; }
+  .ipad-app #toast { bottom:88px; }
+}
+@media print { .ipad-app #navigation,.ipad-app #production-tools-toggle { display:none; } }
+@media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }

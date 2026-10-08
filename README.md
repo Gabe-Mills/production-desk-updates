@@ -5,3 +5,6 @@ I wanted a offline, self hosted solution for doing script breakdowns and creatin
 # Known Bugs
 The google features DO NOT WORK!
 I wanted it to connect to google sheets, have a way to import breakdowns to G-Casper and connect the schedule to your calendar. A bit ambitious and something I have no clue how to do. Right now the buttons do NOT work. 
+
+# iPhone and iPad
+The offline iOS app source is in [`ios/`](ios/README.md). Open `ios/ProductionDesk.xcodeproj` in Xcode and run the `ProductionDesk` scheme on an iOS 17 or later simulator. It preserves the Production Desk brand and local breakdown, schedule, shot list, elements and report workflows. See the [setup guide](ios/README.md), [iOS installer](ios/INSTALL.md) and [verification notes](ios/VERIFICATION.md) for build commands, file interchange and device signing requirements.

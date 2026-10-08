@@ -1,0 +1,9 @@
+{
+  "name": "production-desk-ios-validation",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test scripts/test-web.mjs"
+  }
+}
