@@ -1,7 +1,18 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>Production Desk</title>
+        <item>
+            <title>1.4.2</title>
+            <pubDate>Fri, 09 Oct 2026 08:58:32 -0400</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>1.4.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description>&lt;h2&gt;Production Desk 1.4.2&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Removed nonfunctional Google account linking, G-Casper transfers, and Google Calendar sharing.&lt;/li&gt;&lt;li&gt;Settings now focuses on Light and Dark appearance, preserving your saved theme.&lt;/li&gt;&lt;li&gt;Local projects, breakdowns, schedules, shot lists, and file exports remain available.&lt;/li&gt;&lt;/ul&gt;
+</description>
+            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.2-12.zip" length="17885127" type="application/octet-stream" sparkle:edSignature="jUvrigYxdEgaZyUMOo3pSOgHV5Gbr1MP9hSc+5NHid9/JyqDyIsIuW2KGiMVVjvVbBj5UTuFtyQK9hA1Bh4RDA==" />
+        </item>
         <item>
             <title>1.4.1</title>
             <pubDate>Tue, 06 Oct 2026 16:08:38 -0400</pubDate>
@@ -9,8 +20,8 @@
             <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2>Production Desk 1.4.1</h2><ul><li>Automatic update delivery is now live at updates.squidproductions.org.</li><li>Includes the completed update setup and release instructions.</li><li>Downloads are verified and your pending project changes are saved before restarting.</li></ul>]]></description>
-            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.1-11.zip" length="17911832" type="application/octet-stream" sparkle:edSignature="+V3fbEeeyjB/i3Lr1Ztcey/OuEK12CRgLykDxXW09/IntAoKhzgP8Oh/GNcu/nvOPKOJJLToIRFijzTTYDZYDg=="/>
+            <description>&lt;h2&gt;Production Desk 1.4.1&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Automatic update delivery is now live at updates.squidproductions.org.&lt;/li&gt;&lt;li&gt;Includes the completed update setup and release instructions.&lt;/li&gt;&lt;li&gt;Downloads are verified and your pending project changes are saved before restarting.&lt;/li&gt;&lt;/ul&gt;</description>
+            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.1-11.zip" length="17911832" type="application/octet-stream" sparkle:edSignature="+V3fbEeeyjB/i3Lr1Ztcey/OuEK12CRgLykDxXW09/IntAoKhzgP8Oh/GNcu/nvOPKOJJLToIRFijzTTYDZYDg==" />
         </item>
         <item>
             <title>1.4.0</title>
@@ -19,16 +30,16 @@
             <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description><![CDATA[<h2>Production Desk 1.4.0</h2>
-<ul>
-  <li>Check for updates from the Production Desk menu.</li>
-  <li>Choose automatic update checks and optional automatic downloading and installation.</li>
-  <li>Update downloads are verified before installation.</li>
-  <li>Pending project changes are saved before restarting for an update.</li>
-</ul>
-<p>Update delivery requires the update host at updates.squidproductions.org to be activated. Local scheduling remains available offline.</p>
-]]></description>
-            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.0-10.zip" length="17911833" type="application/octet-stream" sparkle:edSignature="hyGuXhD1bnnaipp9sOucsHzqGu3KHv1D4ItbIrdP57Y0uDircB7v7wwG/up4ImiSL9t0rOmhZ1gXcsqQByCKAg=="/>
+            <description>&lt;h2&gt;Production Desk 1.4.0&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Check for updates from the Production Desk menu.&lt;/li&gt;
+  &lt;li&gt;Choose automatic update checks and optional automatic downloading and installation.&lt;/li&gt;
+  &lt;li&gt;Update downloads are verified before installation.&lt;/li&gt;
+  &lt;li&gt;Pending project changes are saved before restarting for an update.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Update delivery requires the update host at updates.squidproductions.org to be activated. Local scheduling remains available offline.&lt;/p&gt;
+</description>
+            <enclosure url="https://updates.squidproductions.org/Production-Desk-1.4.0-10.zip" length="17911833" type="application/octet-stream" sparkle:edSignature="hyGuXhD1bnnaipp9sOucsHzqGu3KHv1D4ItbIrdP57Y0uDircB7v7wwG/up4ImiSL9t0rOmhZ1gXcsqQByCKAg==" />
         </item>
     </channel>
 </rss>
