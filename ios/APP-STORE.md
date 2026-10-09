@@ -1,6 +1,6 @@
 # App Store build readiness
 
-The iOS target remains Production Desk **1.4.1 (1)**, bundle `local.slate.filmscheduler`, iOS 17 or later. The desktop 1.4.2 release does not change the iOS source.
+The iOS target remains Production Desk **1.4.1 (2)**, bundle `local.slate.filmscheduler`, iOS 17 or later. The desktop 1.4.2 release does not change the iOS source.
 
 `PrivacyInfo.xcprivacy` declares no tracking or developer collection and reason **C617.1** for file metadata inside the app container. `WorkspaceStore.readCandidate` reads workspace file attributes to reject oversized backups before loading them. No metadata is sent to a developer service. The reason follows [Apple's required-reason specification](https://developer.apple.com/documentation/bundleresources/app-privacy-configuration/nsprivacyaccessedapitypes/nsprivacyaccessedapitypereasons).
 
@@ -19,3 +19,5 @@ xcodebuild -project ios/ProductionDesk.xcodeproj -scheme ProductionDesk \
 Verified with Xcode 27.0: archive succeeded; built arm64 bundle has the expected identifier/version/build, privacy manifest and exemption flag; every bundled Web file matches source; 1024×1024 app icon has no alpha. Existing 94 test executions cover app behavior. The only archive warning is skipped App Intents metadata because the app does not use AppIntents.
 
 An unsigned archive cannot be uploaded as-is. Export requires an App Store distribution profile matching this explicit app identifier and an existing Apple Distribution identity. Do not create certificates or profiles or invoke automatic provisioning without authorization. An export or upload success does not imply processing, App Review submission, approval or publication. App pricing and listing metadata are managed separately in App Store Connect.
+
+Build 2 updates the visible software credit to “Squid Productions and Gabe Mills,” as requested. It preserves the app name, logo, version and workflows. Build 1 was validated and uploaded previously; the replacement keeps the existing approved signing assets.
